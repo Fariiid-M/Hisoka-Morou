@@ -2098,7 +2098,7 @@ break
             break
             case 'umma': case 'ummadl': {
 	        if (!text) throw `Example : ${prefix + command} https://umma.id/channel/video/post/gus-arafat-sumber-kecewa-84464612933698`
-                let { umma } = require('./lib) scraper')
+                let { umma } = require('./lib/scraper')
 		let anu = await umma(isUrl(text)[0])
 		if (anu.type == 'video') {
 		    let buttons = [
